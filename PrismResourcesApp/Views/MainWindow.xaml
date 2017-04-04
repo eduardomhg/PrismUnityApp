@@ -1,0 +1,23 @@
+﻿<Window x:Class="PrismResourcesApp.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:prism="http://prismlibrary.com/"
+        prism:ViewModelLocator.AutoWireViewModel="True"
+        Title="{Binding Title}" Height="350" Width="525">
+    <Grid ShowGridLines="True">
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock Text="Shell Text"/>
+            <TextBlock Text="{StaticResource SharedText}"/>
+        </StackPanel>
+        
+        <ContentControl prism:RegionManager.RegionName="ContentRegion1" Grid.Column="1"/>
+        <ContentControl prism:RegionManager.RegionName="ContentRegion2" Grid.Column="2"/>
+    </Grid>
+</Window>

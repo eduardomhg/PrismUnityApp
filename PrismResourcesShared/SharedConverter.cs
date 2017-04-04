@@ -1,0 +1,30 @@
+﻿using System;
+using System.Diagnostics;
+using System.Globalization;
+using System.Windows.Data;
+
+namespace PrismResourcesShared
+{
+    public class SharedConverter : IValueConverter
+    {
+        public SharedConverter()
+        {
+            Debug.WriteLine("Shared Converter constructed!");
+        }
+
+        ~SharedConverter()
+        {
+            Debug.WriteLine("Shared Converter destructed!");
+        }
+
+        public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
+        {
+            return value;
+        }
+
+        public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
+        {
+            return value;
+        }
+    }
+}
