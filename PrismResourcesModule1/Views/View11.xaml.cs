@@ -9,11 +9,26 @@ namespace PrismResourcesModule1.Views
     /// <summary>
     /// Interaction logic for View1.xaml
     /// </summary>
-    public partial class View11 : UserControl
+    public partial class View11 : BaseView
     {
         public View11()
         {
             InitializeComponent();
+
+            Debug.WriteLine($"Resources for {this.GetType().Name}: {this.Resources.Count}");
+
+            if (this.TryFindResource("TestResourceKey") != null)
+            {
+                Debug.WriteLine($"TestResourceKey found");
+            }
+            else
+            {
+                Debug.WriteLine($"TestResourceKey NOT found");
+            }
+
+            //Debug.WriteLine($"Parent of {this.GetType().Name}: {this.Parent.GetType().Name}");
+
+            //Debug.WriteLine($"Resources for {this.Parent.GetType().Name}: {(this.Parent as FrameworkElement)?.Resources.Count}");
         }
     }
 }

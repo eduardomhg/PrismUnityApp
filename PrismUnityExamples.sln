@@ -3,17 +3,28 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26228.9
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrismUnityApp1", "PrismUnityApp1\PrismUnityApp1.csproj", "{99C9E82C-C594-446D-AA59-8FFBC43AD226}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrismUnityTabControlApp", "PrismUnityApp1\PrismUnityTabControlApp.csproj", "{99C9E82C-C594-446D-AA59-8FFBC43AD226}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrismResourcesApp", "PrismResourcesApp\PrismResourcesApp.csproj", "{83971481-3DAA-4FEB-A65A-8720D05DC1E2}"
+	ProjectSection(ProjectDependencies) = postProject
+		{30D8E071-6D40-4A0D-AE3C-7404F8B6BA5D} = {30D8E071-6D40-4A0D-AE3C-7404F8B6BA5D}
+		{AB8B448C-DD74-4D60-A041-3E5D03A32180} = {AB8B448C-DD74-4D60-A041-3E5D03A32180}
+		{236EF7F8-DCFA-4F92-9A9A-0D5F93A7F0AA} = {236EF7F8-DCFA-4F92-9A9A-0D5F93A7F0AA}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrismResourcesModule1", "PrismResourcesModule1\PrismResourcesModule1.csproj", "{AB8B448C-DD74-4D60-A041-3E5D03A32180}"
+	ProjectSection(ProjectDependencies) = postProject
+		{30D8E071-6D40-4A0D-AE3C-7404F8B6BA5D} = {30D8E071-6D40-4A0D-AE3C-7404F8B6BA5D}
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PrismResources", "PrismResources", "{6D6DB56E-EB8F-4F71-9E3A-ABD9FDCFB0B4}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PrismTabControl", "PrismTabControl", "{4B4C0937-C416-44B8-AAA5-761F8C521C2B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrismResourcesModule2", "PrismResourcesModule2\PrismResourcesModule2.csproj", "{236EF7F8-DCFA-4F92-9A9A-0D5F93A7F0AA}"
+	ProjectSection(ProjectDependencies) = postProject
+		{30D8E071-6D40-4A0D-AE3C-7404F8B6BA5D} = {30D8E071-6D40-4A0D-AE3C-7404F8B6BA5D}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrismResourcesShared", "PrismResourcesShared\PrismResourcesShared.csproj", "{30D8E071-6D40-4A0D-AE3C-7404F8B6BA5D}"
 EndProject

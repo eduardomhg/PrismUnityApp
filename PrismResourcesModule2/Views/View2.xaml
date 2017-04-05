@@ -20,8 +20,9 @@
  
     <Grid>
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
-            <TextBlock Text="{Binding Text, Converter={StaticResource SharedConverter}}"/>
+            <!--<TextBlock Text="{Binding Text, Converter={StaticResource SharedConverter}}"/>-->
             <TextBlock Text="{StaticResource SharedText}"/>
+            <TextBlock Text="Toby"/>
         </StackPanel>
     </Grid>
 </UserControl>

@@ -6,6 +6,9 @@
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="Themes/Styles.xaml"/>
                 <ResourceDictionary Source="pack://application:,,,/PrismResourcesShared;component/Themes/SharedResources.xaml"/>
+
+                <ResourceDictionary Source="pack://application:,,,/PrismResourcesModule1;component/Themes/SharedResources.xaml"/>
+                <ResourceDictionary Source="pack://application:,,,/PrismResourcesModule2;component/Themes/SharedResources.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>

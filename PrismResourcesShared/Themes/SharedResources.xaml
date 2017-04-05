@@ -4,5 +4,4 @@
                     xmlns:prismResourcesShared="clr-namespace:PrismResourcesShared">
 
     <system:String x:Key="SharedText">Shared Text</system:String>
-    <prismResourcesShared:SharedConverter x:Key="SharedConverter"/>
 </ResourceDictionary>
